@@ -45,7 +45,13 @@ namespace TIMSApp
             services.AddTransient<IInstituteManager, InstituteManager>();
             services.AddTransient<ICourseRepository, CourseRepository>();
             services.AddTransient<ICourseManager, CourseManager>();
+            services.AddTransient<IBatchRepository, BatchRepository>();
+            services.AddTransient<IBatchManager, BatchManager>();
+            services.AddTransient<ITraineeRepository, TraineeRepository>();
+            services.AddTransient<ITraineeManager, TraineeManager>();
 
+            services.AddTransient<ITrainerRepository, TrainerRepository>();
+            services.AddTransient<ITrainerManager, TrainerManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

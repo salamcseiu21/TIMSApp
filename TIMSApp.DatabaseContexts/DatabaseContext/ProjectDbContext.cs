@@ -17,7 +17,10 @@ namespace TIMSApp.DatabaseContexts.DatabaseContext
         {
         }
         public DbSet<Institute> Institutes { get; set; }
-        public DbSet<Course> Courses { get; set; } 
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Batch> Batches { get; set; }
+        public DbSet<Trainer> Trainers { get; set; }
+        public DbSet<Trainee> Trainees { get; set; } 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
