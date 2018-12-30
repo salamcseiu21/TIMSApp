@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TIMSApp.DatabaseContexts\TIMSApp.DatabaseContexts.csproj" />
+    <ProjectReference Include="..\TIMSApp.Models\TIMSApp.Models.csproj" />
+  </ItemGroup>
+
+</Project>
